@@ -1,0 +1,134 @@
+.footer-area {
+    background-image: url(../../assets//solutek-imagess/footer-bg.png);
+    padding: 40px 20px;
+    color: #b3b3b3;
+    font-size: 0.9rem;
+  }
+  
+  .footer-logo {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  
+  .footer-logo .highlight {
+    color: #ff4500;
+  }
+  
+  .footer-description {
+    margin-bottom: 20px;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 16px;
+
+  }
+  
+  .footer-social-icons a {
+    color: #b3b3b3;
+    font-size: 1.2rem;
+    margin-right: 15px;
+    transition: color 0.3s;
+  }
+  
+  .footer-social-icons a:hover {
+    color: #ff4500;
+  }
+  
+  .footer-widget {
+    margin-bottom: 30px;
+  }
+  
+  .footer-title {
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-family: "Fira Sans", sans-serif;
+    transition: color 0.3s;
+    font-size: 16px;
+  }
+  
+  .footer-links a:hover {
+    color: #ff4500;
+  }
+  
+  .newsletter-input {
+    margin-top: 15px;
+  }
+  
+  .newsletter-input .form-control {
+    background-color: #1a1c35;
+    border: none;
+    color: #b3b3b3;
+  }
+  
+  .newsletter-icon {
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+  }
+  
+  .footer-bottom {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #1a1c35;
+  }
+  
+  .footer-bottom p,
+  .footer-bottom a {
+    color: #b3b3b3;
+    font-size: 0.9rem;
+    margin: 0;
+  }
+  
+  .footer-bottom a {
+    text-decoration: none;
+    margin-left: 15px;
+    transition: color 0.3s;
+  }
+  
+  .footer-bottom a:hover {
+    color: #ff4500;
+  }
+  .inp  {
+    padding: 10px 10px;
+    background-color: transparent;
+    color: rgb(179, 179, 179);
+    border: none;
+    outline: none;
+  }
+  .fplane {
+    padding: 10px 20px;
+    color: white !important;
+    text-align: center;
+    font-size: 16px;
+    background-color: #ff4500;
+  }
+  .rightt {
+    text-align: right;
+  }
+  .textt {
+    color: white;
+  }
+  
+  @media (max-width: 576px) {
+    .rightt {
+        text-align: left;
+    }
+  }
+  

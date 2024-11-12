@@ -1,0 +1,73 @@
+$btn-color: #F03A02;
+
+.btn-color {
+  background: $btn-color;
+  color: white; 
+  border: none; 
+
+  
+  padding: 10px 20px;
+  
+
+  
+  &:hover {
+    // background: darken($btn-color, 10%);
+    cursor: pointer;
+  }
+}
+
+
+.my-32{
+    margin-top: 150px;
+}
+
+.bg-orange{
+  background-color: #F03A02 ;
+}
+.text-orange{
+  color: #F03A02 !important;
+}
+
+.bg-blue{
+  background-color: #050A1E;
+}
+.text-white{
+  color: white;
+}
+
+.card-hover:hover{
+  color: black;
+}
+
+.testi-h{
+  min-height: 400px;
+}
+
+.bg-navbar{
+  background: #050A1E;
+}
+
+.font-bold{
+  font-weight: bold;
+}
+
+.font-family{
+  font-family: "Poppins"; 
+}
+
+.text-xl{
+  font-size: large;
+}
+.text-2xl{
+  font-size: 21px !important;
+}
+.text-medium{
+  font-size: 18px;
+}
+.border-theme{
+  border: 2px solid #F03A02;
+}
+
+.pt-32{
+  padding-top: 80px !important;
+}
