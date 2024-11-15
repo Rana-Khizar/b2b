@@ -1,16 +1,10 @@
 import React from "react";
 import "./Step7Partnership.css";
-<<<<<<< Updated upstream
 import Layout from "../../Layout/Layout";
 
 const Step7Partnership = ({ onNext, onPrevious }) => {
   return (
     <Layout>
-=======
-
-const Step7Partnership = ({ onNext, onPrevious }) => {
-  return (
->>>>>>> Stashed changes
     <div className="form-step">
       <h2>Partnership Goals and Support Needs</h2>
       <form>
@@ -65,11 +59,7 @@ const Step7Partnership = ({ onNext, onPrevious }) => {
               <input type="checkbox" value="productPhotography" /> Product Photography
             </label>
             <label>
-<<<<<<< Updated upstream
               <input type="checkbox" value="" /> Other (please specify):
-=======
-              <input type="checkbox" value="other" /> Other (please specify):
->>>>>>> Stashed changes
               <input
                 type="text"
                 className="other-input"
@@ -89,10 +79,7 @@ const Step7Partnership = ({ onNext, onPrevious }) => {
         </div>
       </form>
     </div>
-<<<<<<< Updated upstream
     </Layout>  
-=======
->>>>>>> Stashed changes
   );
 };
 

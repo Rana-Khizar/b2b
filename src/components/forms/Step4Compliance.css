@@ -17,11 +17,7 @@
   }
   
   .form-group {
-<<<<<<< Updated upstream
     margin-bottom: 5px;
-=======
-    margin-bottom: 15px;
->>>>>>> Stashed changes
   }
   
   .form-group label {
@@ -40,10 +36,7 @@
     border: 1px solid #cccccc;
     border-radius: 5px;
     margin-top: 5px;
-<<<<<<< Updated upstream
     color: #dee2e6;
-=======
->>>>>>> Stashed changes
     transition: border-color 0.3s;
   }
   
@@ -110,7 +103,6 @@
   .btn-secondary:hover {
     background-color: #bbbbbb;
   }
-<<<<<<< Updated upstream
   .form-step {
     padding: 20px;
     background-color: #f9f9f9;
@@ -185,6 +177,3 @@
     opacity: 0.9;
   }
     
-=======
-  
->>>>>>> Stashed changes
