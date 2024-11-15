@@ -1,0 +1,99 @@
+/* src/components/Form1.css */
+.form-wrapper {
+    display: relative;
+    justify-content: space;
+    align-items: flex-start; /* Align content at the top */
+    height: 100vh;
+    padding: 0 20px;
+  }
+  
+  .form-container {
+    background-color: rgba(255, 255, 255, 0.9); /* White background with transparency */
+    border-radius: 15px;
+    padding: 30px;
+    width: 100%;
+    max-width: 1200px; /* Larger container for more space */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #050A1E; /* Dark color for title */
+    margin-bottom: 20px;
+  }
+  
+  .form-subtitle {
+    font-size: 18px;
+    font-weight: bold;
+    color: #050A1E;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  /* Flexbox layout for rows to arrange fields horizontally */
+  .form-row {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping if necessary */
+    justify-content: space-between;
+    gap: 30px; /* Gap between form groups */
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    flex: 1 1 48%; /* Allow fields to take equal width, wrapping when necessary */
+    min-width: 250px; /* Ensure that form fields don’t become too small on narrow screens */
+  }
+  
+  .form-label {
+    display: block;
+    font-weight: bold;
+    color: #050A1E;
+    margin-bottom: 5px;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .form-input:focus {
+    border-color: #ff3d00; /* Focus border color */
+  }
+  
+  .form-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #ff3d00;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+  }
+  
+  .form-button:hover {
+    background-color: #e83700; /* Darken button on hover */
+  }
+  
+  .form-navigation {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .bg-blue {
+    background-color: rgba(5, 10, 30, 0.9); /* Dark background for the page */
+    background-size: cover;
+    padding: 0;
+  }
+  

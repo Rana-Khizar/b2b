@@ -1,76 +1,104 @@
+// src/components/Form1.js
 import React from 'react';
-import { Form, Button } from 'react-bootstrap';
-import './formStyles.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { useNavigate } from 'react-router-dom';
+import './FormStyles.css'
+import Layout from '../../Layout/Layout';
 
+const Form1 = () => {
+  const navigate = useNavigate();
 
-const Form1 = ({ formData, handleChange, handleNext }) => (
-    <div className="form-container">
-    <h2>Form 1: Basic Information</h2>
-    <Form>
-      <Form.Group controlId="taxId">
-        <Form.Label>Tax Identification Number</Form.Label>
-        <Form.Control
-          type="text"
-          name="taxId"
-          value={formData.taxId}
-          onChange={handleChange}
-        />
-      </Form.Group>
+  const handleNext = () => {
+    navigate('/form2');
+  };
 
-      <Form.Group controlId="companyName">
-        <Form.Label>Company Name</Form.Label>
-        <Form.Control
-          type="text"
-          name="companyName"
-          value={formData.companyName}
-          onChange={handleChange}
-        />
-      </Form.Group>
+  return (
+    <div className="form-wrapper">
+      <Layout>
+        <div className="form-container">
+          <h2 className="form-title">Vendor Information</h2>
+          
+          <div className="form-row">
+            <div className="form-group">
+              <label className="form-label">Business Name:</label>
+              <input type="text" className="form-input" placeholder="Enter business name" />
+            </div>
+            <div className="form-group">
+              <label className="form-label">Business Legal Structure:</label>
+              <input type="text" className="form-input" placeholder="e.g., Sole Proprietorship" />
+            </div>
+          </div>
 
-      <Form.Group controlId="address">
-        <Form.Label>Address</Form.Label>
-        <Form.Control
-          type="text"
-          name="address"
-          value={formData.address}
-          onChange={handleChange}
-        />
-      </Form.Group>
+          <div className="form-row">
+            <div className="form-group">
+              <label className="form-label">Business Type:</label>
+              <input type="text" className="form-input" placeholder="e.g., Online Retail" />
+            </div>
+            <div className="form-group">
+              <label className="form-label">Business Registration Number:</label>
+              <input type="text" className="form-input" placeholder="Enter registration number" />
+            </div>
+          </div>
 
-      <Form.Group controlId="city">
-        <Form.Label>City</Form.Label>
-        <Form.Control
-          type="text"
-          name="city"
-          value={formData.city}
-          onChange={handleChange}
-        />
-      </Form.Group>
+          <div className="form-row">
+            <div className="form-group">
+              <label className="form-label">Business Affiliations:</label>
+              <input type="text" className="form-input" placeholder="Enter affiliations" />
+            </div>
+          </div>
 
-      <Form.Group controlId="state">
-        <Form.Label>State</Form.Label>
-        <Form.Control
-          type="text"
-          name="state"
-          value={formData.state}
-          onChange={handleChange}
-        />
-      </Form.Group>
+          <h5 className="form-subtitle">Business Mailing Address</h5>
+          <div className="form-row">
+            <div className="form-group">
+              <input type="text" className="form-input" placeholder="Street address" />
+            </div>
+            <div className="form-group">
+              <input type="text" className="form-input" placeholder="Street Address 2" />
+            </div>
+          </div>
 
-      <Form.Group controlId="zipCode">
-        <Form.Label>Zip Code</Form.Label>
-        <Form.Control
-          type="text"
-          name="zipCode"
-          value={formData.zipCode}
-          onChange={handleChange}
-        />
-      </Form.Group>
+          <div className="form-row">
+            <div className="form-group">
+              <input type="text" className="form-input" placeholder="City" />
+            </div>
+            <div className="form-group">
+              <input type="text" className="form-input" placeholder="State" />
+            </div>
+          </div>
 
-      <Button onClick={handleNext}>Next</Button>
-    </Form>
-  </div>
-);
+          <div className="form-row">
+            <div className="form-group">
+              <input type="text" className="form-input" placeholder="Zip Code" />
+            </div>
+            <div className="form-group">
+              <input type="text" className="form-input" placeholder="Country" />
+            </div>
+          </div>
+
+          <div className="form-row">
+            <div className="form-group">
+              <label className="form-label">Business Email:</label>
+              <input type="email" className="form-input" placeholder="Enter email" />
+            </div>
+            <div className="form-group">
+              <label className="form-label">Business Phone:</label>
+              <input type="tel" className="form-input" placeholder="Enter phone number" />
+            </div>
+          </div>
+
+          <div className="form-row">
+            <div className="form-group">
+              <label className="form-label">Business Website:</label>
+              <input type="text" className="form-input" placeholder="Enter website URL" />
+            </div>
+          </div>
+
+          <div className="form-navigation">
+            <button className="form-button" onClick={handleNext}>Next</button>
+          </div>
+        </div>
+      </Layout>
+    </div>
+  );
+};
 
 export default Form1;

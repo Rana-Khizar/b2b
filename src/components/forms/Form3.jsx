@@ -1,47 +1,49 @@
-// eslint-disable-next-line no-unused-vars
+// src/components/Form3.js
 import React from 'react';
-import { Form, Button } from 'react-bootstrap';
-import './formStyles.css';
+import { useNavigate } from 'react-router-dom';
+import './FormStyles.css'
+import Layout from '../../Layout/Layout';
 
-const Form3 = ({ formData, handleChange, handleNext, handlePrevious }) => (
+const Form3 = () => {
+  const navigate = useNavigate();
 
+  const handleNext = () => {
+    navigate('/form4');
+  };
+
+  const handlePrevious = () => {
+    navigate('/form2');
+  };
+
+  return (
+    <div className="form bg-blue">
+      <Layout>
     <div className="form-container">
-    <h2>Form 3: Additional Details</h2>
-    <Form>
-      <Form.Group controlId="businessType">
-        <Form.Label>Type of Business</Form.Label>
-        <Form.Control
-          type="text"
-          name="businessType"
-          value={formData.businessType}
-          onChange={handleChange}
-        />
-      </Form.Group>
+      <h2 className="form-title">Tax Information</h2>
 
-      <Form.Group controlId="numberOfEmployees">
-        <Form.Label>Number of Employees</Form.Label>
-        <Form.Control
-          type="number"
-          name="numberOfEmployees"
-          value={formData.numberOfEmployees}
-          onChange={handleChange}
-        />
-      </Form.Group>
+      <label className="form-label">Tax Identification Number:</label>
+      <input type="text" className="form-input" placeholder="Enter Tax ID" />
 
-      <Form.Group controlId="annualRevenue">
-        <Form.Label>Annual Revenue</Form.Label>
-        <Form.Control
-          type="text"
-          name="annualRevenue"
-          value={formData.annualRevenue}
-          onChange={handleChange}
-        />
-      </Form.Group>
+      <label className="form-label">GST Number:</label>
+      <input type="text" className="form-input" placeholder="Enter GST Number" />
 
-      <Button onClick={handlePrevious}>Previous</Button>
-      <Button onClick={handleNext}>Next</Button>
-    </Form>
-  </div>
-);
+      <label className="form-label">Import Export Code:</label>
+      <input type="text" className="form-input" placeholder="Enter Import Export Code" />
+
+      <label className="form-label">Bank Name:</label>
+      <input type="text" className="form-input" placeholder="Enter Bank Name" />
+
+      <label className="form-label">Bank Account Number:</label>
+      <input type="text" className="form-input" placeholder="Enter Account Number" />
+
+      <div className="form-navigation">
+        <button className="form-button" onClick={handlePrevious}>Previous</button>
+        <button className="form-button" onClick={handleNext}>Next</button>
+      </div>
+    </div>
+    </Layout>
+    </div>
+  );
+};
 
 export default Form3;

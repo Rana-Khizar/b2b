@@ -85,19 +85,19 @@ export default function Header() {
                 </ul>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/infobusiness">PARTNERSHIP PROCESS</Link>
+                <Link className="nav-link" to="/form1">PARTNERSHIP PROCESS</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/contactForm">PARTNERSHIP REGISTRATION</Link>
+                <Link className="nav-link" to="/form2">PARTNERSHIP REGISTRATION</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/taxform">SUBMIT DOCUMENT</Link>
+                <Link className="nav-link" to="/form3">SUBMIT DOCUMENT</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/VendorForm">APPLICATION STATUS</Link>
+                <Link className="nav-link" to="/form4">APPLICATION STATUS</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/form">BOOK APPOINTMENT</Link>
+                <Link className="nav-link" to="/">BOOK APPOINTMENT</Link>
               </li>
             </ul>
           </div>

@@ -1,56 +1,47 @@
-// src/forms/Form2.js
+// src/components/Form2.js
 import React from 'react';
-import { Form, Button } from 'react-bootstrap';
-import './formStyles.css';
+import { useNavigate } from 'react-router-dom';
+import './FormStyles.css'
+//import './Form1.css'
+import Layout from '../../Layout/Layout';
 
-const Form2 = ({ formData, handleChange, handleNext, handlePrevious }) => (
+const Form2 = () => {
+  const navigate = useNavigate();
+
+  const handleNext = () => {
+    navigate('/form3');
+  };
+
+  const handlePrevious = () => {
+    navigate('/form1');
+  };
+
+  return (
+    <div className="form bg-blue">
+    <Layout>
     <div className="form-container">
-    <h2>Form 2: Contact Information</h2>
-    <Form>
-      <Form.Group controlId="contactFirstName">
-        <Form.Label>First Name</Form.Label>
-        <Form.Control
-          type="text"
-          name="contactFirstName"
-          value={formData.contactFirstName}
-          onChange={handleChange}
-        />
-      </Form.Group>
+      <h2 className="form-title">Business Details</h2>
 
-      <Form.Group controlId="contactLastName">
-        <Form.Label>Last Name</Form.Label>
-        <Form.Control
-          type="text"
-          name="contactLastName"
-          value={formData.contactLastName}
-          onChange={handleChange}
-        />
-      </Form.Group>
+      <label className="form-label">Business Type:</label>
+      <input type="text" className="form-input" placeholder="e.g., Online Retail" />
 
-      <Form.Group controlId="contactPhone">
-        <Form.Label>Phone Number</Form.Label>
-        <Form.Control
-          type="tel"
-          name="contactPhone"
-          value={formData.contactPhone}
-          onChange={handleChange}
-        />
-      </Form.Group>
+      <label className="form-label">Year Established:</label>
+      <input type="number" className="form-input" placeholder="e.g., 2022" />
 
-      <Form.Group controlId="contactEmail">
-        <Form.Label>Email Address</Form.Label>
-        <Form.Control
-          type="email"
-          name="contactEmail"
-          value={formData.contactEmail}
-          onChange={handleChange}
-        />
-      </Form.Group>
+      <label className="form-label">Annual Revenue:</label>
+      <input type="text" className="form-input" placeholder="e.g., $500,000" />
 
-      <Button onClick={handlePrevious}>Previous</Button>
-      <Button onClick={handleNext}>Next</Button>
-    </Form>
-  </div>
-);
+      <label className="form-label">Number of Employees:</label>
+      <input type="number" className="form-input" placeholder="e.g., 50" />
+
+      <div className="form-navigation">
+        <button className="form-button" onClick={handlePrevious}>Previous</button>
+        <button className="form-button" onClick={handleNext}>Next</button>
+      </div>
+    </div>
+    </Layout> 
+    </div>
+  );
+};
 
 export default Form2;

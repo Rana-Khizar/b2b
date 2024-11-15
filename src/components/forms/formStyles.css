@@ -1,83 +1,66 @@
-/* src/formStyles.css */
+/* Common styling for all form components */
+.form-container {
+  max-width: 500px;
+  margin: auto;
+  padding: 2rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-/* Base styling */
-body {
-    background-color: #f8f9fa;
-    font-family: Arial, sans-serif;
-  }
-  
-  .form-container {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  h2 {
-    color: #333333;
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-    text-align: center;
-  }
-  
-  .form-group {
-    margin-bottom: 1.5rem;
-  }
-  
-  .form-label {
-    font-weight: 600;
-    color: #555555;
-  }
-  
-  .form-control {
-    border: 1px solid #ced4da;
-    border-radius: 4px;
-    padding: 10px;
-    font-size: 1rem;
-    color: #495057;
-  }
-  
-  .form-control:focus {
-    border-color: #80bdff;
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-  }
-  
-  button {
-    width: 100px;
-    margin-top: 1rem;
-    padding: 8px 16px;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: all 0.3s ease;
-  }
-  
-  button:focus {
-    outline: none;
-  }
-  
-  button:hover {
-    transform: translateY(-2px);
-  }
-  
-  button[type="button"]:first-of-type {
-    background-color: #6c757d;
-    color: #ffffff;
-    border: none;
-  }
-  
-  button[type="button"]:first-of-type:hover {
-    background-color: #5a6268;
-  }
-  
-  button[type="button"]:last-of-type {
-    background-color: #007bff;
-    color: #ffffff;
-    border: none;
-  }
-  
-  button[type="button"]:last-of-type:hover {
-    background-color: #0056b3;
-  }
-  
+.form-title {
+  color: #050A1E;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.form-label {
+  color: #050A1E;
+  font-weight: 500;
+  margin-top: 1rem;
+  display: block;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-input:focus {
+  border-color: #ff3d00;
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 61, 0, 0.4);
+}
+
+.form-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.form-button {
+  padding: 0.8rem 1.5rem;
+  background-color: #ff3d00;
+  color: #ffffff;
+  border: none;
+  border-radius: 2px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+  background-color: #e53800;
+}
+
+.form-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}

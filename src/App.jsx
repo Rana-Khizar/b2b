@@ -19,9 +19,13 @@ import Industry from './components/About/Industry/industryFocus';
 import Mission from './components/About/Mission/Mission';
 import OwnerPortfolio from './components/About/OwnerPortfolio/OwnerPortfolio';  
 import ContactForm from './components/ECommerce/Forms/contactForm';
-import Infobusiness from './components/Ecommerce/Forms/venderInfo';
+//import Infobusiness from './components/Ecommerce/Forms/venderInfo';
 import TaxForm from './components/ECommerce/Forms/taxForm';
-import VendorForm from './components/Ecommerce/Forms/VendorForm';
+import Form1 from './components/forms/Form1';
+import Form2 from './components/forms/Form2';
+import Form3 from './components/forms/Form3';
+import Form4 from './components/forms/Form4';
+//import VendorForm from './components/Ecommerce/Forms/VendorForm';
 
 
 function App() {
@@ -36,9 +40,9 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/ecommerce' element={<Ecommerce />} />
           <Route path='/contactForm' element={<ContactForm/> } />
-          <Route path='/infobusiness' element={<Infobusiness />} />
+          {/* <Route path='/infobusiness' element={<Infobusiness />} /> */}
           <Route path='/taxform' element={<TaxForm />} />
-          <Route path='/VendorForm' element={<VendorForm />} />
+          {/* <Route path='/VendorForm' element={<VendorForm />} /> */}
           <Route path='/brand' element={<Brand />} />
           <Route path='/dkc' element={<Dkc />} />
           <Route path='/gpresence' element={<Gpresence />} />
@@ -53,6 +57,10 @@ function App() {
           <Route path='/import-export' element={<Ecommerce />} />
           <Route path='/consignment' element={<Ecommerce />} />
           <Route path='/exhibition' element={<About />} />
+          <Route path="/form1" element={<Form1 />} />
+          <Route path="/form2" element={<Form2 />} />
+          <Route path="/form3" element={<Form3 />} />
+          <Route path="/form4" element={<Form4 />} />
           <Route path='/franchise' element={<Projects />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>
