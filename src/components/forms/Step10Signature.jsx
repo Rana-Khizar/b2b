@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import "./Step10Signature.css";
-<<<<<<< Updated upstream
 import Layout from "../../Layout/Layout";
-=======
->>>>>>> Stashed changes
 
 const Step10Signature = ({ onPrevious }) => {
   const [signature, setSignature] = useState("");
@@ -25,10 +22,7 @@ const Step10Signature = ({ onPrevious }) => {
   };
 
   return (
-<<<<<<< Updated upstream
   <Layout>
-=======
->>>>>>> Stashed changes
     <div className="form-step">
       <h2>Signature and Submission</h2>
       <form>
@@ -67,10 +61,7 @@ const Step10Signature = ({ onPrevious }) => {
         </div>
       </form>
     </div>
-<<<<<<< Updated upstream
     </Layout>  
-=======
->>>>>>> Stashed changes
   );
 };
 

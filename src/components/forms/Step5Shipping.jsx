@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 import React, { useState } from "react";
 import "./Step5Shipping.css";
 import Layout from "../../Layout/Layout";
@@ -39,29 +38,17 @@ const Step5Shipping = ({ onNext, onPrevious }) => {
 
   return (
   <Layout>    
-=======
-import React from "react";
-import "./Step5Shipping.css";
-
-const Step5Shipping = ({ onNext, onPrevious }) => {
-  return (
->>>>>>> Stashed changes
     <div className="form-step">
       <h2>Shipping and Logistics</h2>
       <form>
         <div className="form-group">
           <label htmlFor="shippingMethod">Preferred Shipping Method:</label>
-<<<<<<< Updated upstream
           <select
             id="shippingMethod"
             value={shippingMethod}
             onChange={handleShippingMethodChange}
           >
             <option value="" disabled>
-=======
-          <select id="shippingMethod">
-            <option value="" disabled selected>
->>>>>>> Stashed changes
               Select a shipping method
             </option>
             <option value="selfShipping">Self-shipping</option>
@@ -78,7 +65,6 @@ const Step5Shipping = ({ onNext, onPrevious }) => {
           </label>
           <div className="checkbox-group">
             <label>
-<<<<<<< Updated upstream
               <input
                 type="checkbox"
                 value="United States"
@@ -113,21 +99,6 @@ const Step5Shipping = ({ onNext, onPrevious }) => {
                 onChange={handleShippingDestinationChange}
               />
               Other (please specify in comments)
-=======
-              <input type="checkbox" value="United States" /> United States
-            </label>
-            <label>
-              <input type="checkbox" value="Canada" /> Canada
-            </label>
-            <label>
-              <input type="checkbox" value="Europe" /> Europe
-            </label>
-            <label>
-              <input type="checkbox" value="Asia" /> Asia
-            </label>
-            <label>
-              <input type="checkbox" value="Other" /> Other (please specify in comments)
->>>>>>> Stashed changes
             </label>
           </div>
         </div>
@@ -138,11 +109,8 @@ const Step5Shipping = ({ onNext, onPrevious }) => {
             id="returnPolicy"
             rows="4"
             placeholder="Briefly describe your return and exchange policies."
-<<<<<<< Updated upstream
             value={returnPolicy}
             onChange={handleReturnPolicyChange}
-=======
->>>>>>> Stashed changes
           />
         </div>
 
@@ -150,7 +118,6 @@ const Step5Shipping = ({ onNext, onPrevious }) => {
           <label htmlFor="inventoryManagement">Inventory Management Capability:</label>
           <div className="radio-group">
             <label>
-<<<<<<< Updated upstream
               <input
                 type="radio"
                 name="inventoryManagement"
@@ -169,12 +136,6 @@ const Step5Shipping = ({ onNext, onPrevious }) => {
                 onChange={handleInventoryManagementChange}
               />
               Software-Based
-=======
-              <input type="radio" name="inventoryManagement" value="manual" /> Manual
-            </label>
-            <label>
-              <input type="radio" name="inventoryManagement" value="softwareBased" /> Software-Based
->>>>>>> Stashed changes
             </label>
           </div>
         </div>
@@ -185,11 +146,8 @@ const Step5Shipping = ({ onNext, onPrevious }) => {
             id="additionalComments"
             rows="4"
             placeholder="Provide any additional details regarding shipping or logistics."
-<<<<<<< Updated upstream
             value={additionalComments}
             onChange={handleAdditionalCommentsChange}
-=======
->>>>>>> Stashed changes
           />
         </div>
 
@@ -203,16 +161,9 @@ const Step5Shipping = ({ onNext, onPrevious }) => {
         </div>
       </form>
     </div>
-<<<<<<< Updated upstream
     </Layout>
 
   );
 };
 
 export default Step5Shipping;
-=======
-  );
-};
-
-export default Step5Shipping;
->>>>>>> Stashed changes

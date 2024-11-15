@@ -43,11 +43,7 @@ const Step1VendorInfo = ({ onNext, updateFormData }) => {
         <div className="grid-item">
           <label htmlFor="registrationNumber">Business Registration Number:</label>
           <input
-<<<<<<< Updated upstream
             type="text"
-=======
-            type="number"
->>>>>>> Stashed changes
             id="registrationNumber"
             name="registrationNumber"
             value={vendorInfo.registrationNumber}
@@ -69,11 +65,7 @@ const Step1VendorInfo = ({ onNext, updateFormData }) => {
         <div className="grid-item">
           <label htmlFor="contactPerson">Primary Contact Person:</label>
           <input
-<<<<<<< Updated upstream
             type="text"
-=======
-            type="number"
->>>>>>> Stashed changes
             id="contactPerson"
             name="contactPerson"
             value={vendorInfo.contactPerson}
@@ -106,11 +98,7 @@ const Step1VendorInfo = ({ onNext, updateFormData }) => {
         <div className="grid-item">
           <label htmlFor="phone">Phone Number:</label>
           <input
-<<<<<<< Updated upstream
             type="tel"
-=======
-            type="number"
->>>>>>> Stashed changes
             id="phone"
             name="phone"
             value={vendorInfo.phone}
@@ -119,11 +107,7 @@ const Step1VendorInfo = ({ onNext, updateFormData }) => {
           />
         </div>
         <div className="grid-item">
-<<<<<<< Updated upstream
           <label htmlFor="website">Website or Online Store URL:</label>
-=======
-          <label htmlFor="website">Website or Online Store URL (if applicable):</label>
->>>>>>> Stashed changes
           <input
             type="url"
             id="website"
@@ -139,11 +123,7 @@ const Step1VendorInfo = ({ onNext, updateFormData }) => {
         </button>
       </div>
     </div>
-<<<<<<< Updated upstream
     </Layout>
-=======
-  </Layout>
->>>>>>> Stashed changes
   );
 };
 

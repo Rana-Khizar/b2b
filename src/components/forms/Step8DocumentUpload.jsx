@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import "./Step8DocumentUpload.css";
-<<<<<<< Updated upstream
 import Layout from "../../Layout/Layout";
-=======
->>>>>>> Stashed changes
 
 const Step8DocumentUpload = ({ onNext, onPrevious }) => {
   const [files, setFiles] = useState({});
@@ -18,10 +15,7 @@ const Step8DocumentUpload = ({ onNext, onPrevious }) => {
   };
 
   return (
-<<<<<<< Updated upstream
     <Layout>
-=======
->>>>>>> Stashed changes
     <div className="form-step">
       <h2>Document Uploads</h2>
       <form>
@@ -90,10 +84,7 @@ const Step8DocumentUpload = ({ onNext, onPrevious }) => {
         </div>
       </form>
     </div>
-<<<<<<< Updated upstream
     </Layout>
-=======
->>>>>>> Stashed changes
   );
 };
 

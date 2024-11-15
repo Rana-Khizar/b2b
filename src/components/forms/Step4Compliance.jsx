@@ -1,5 +1,4 @@
 import React from "react";
-<<<<<<< Updated upstream
 import Layout from "../../Layout/Layout";
 import "./Step4Compliance.css";
 
@@ -58,66 +57,6 @@ const Step4Compliance = ({ onNext, onPrevious }) => {
             </label>
           </div>
         </div>
-=======
-import "./Step4Compliance.css";
-
-const Step4Compliance = ({ onNext, onPrevious }) => {
-  return (
-    <div className="form-step">
-      <h2>Compliance and Certifications</h2>
-      <form>
-        <div className="form-group">
-          <label htmlFor="certifications">Certifications Achieved:</label>
-          <input 
-            type="text" 
-            id="certifications" 
-            placeholder="e.g., ISO 9001, Fair Trade" 
-          />
-        </div>
-
-        <div className="form-group">
-          <label htmlFor="compliance">Compliance Standards Followed:</label>
-          <input 
-            type="text" 
-            id="compliance" 
-            placeholder="e.g., GDPR, Environmental Compliance" 
-          />
-        </div>
-
-        <div className="form-group">
-          <label htmlFor="audits">Have you undergone any audits?</label>
-          <div className="radio-group">
-            <label>
-              <input type="radio" name="audits" value="yes" /> Yes
-            </label>
-            <label>
-              <input type="radio" name="audits" value="no" /> No
-            </label>
-          </div>
-        </div>
-
-        <div className="form-group">
-          <label>Do you comply with child labor laws?</label>
-          <div className="radio-group">
-            <label>
-              <input type="radio" name="childLabor" value="yes" /> Yes
-            </label>
-            <label>
-              <input type="radio" name="childLabor" value="no" /> No
-            </label>
-          </div>
-        </div>
-
-        <div className="form-group">
-          <label>Additional Comments:</label>
-          <textarea 
-            id="additionalComments" 
-            rows="4" 
-            placeholder="Provide any additional details about compliance." 
-          />
-        </div>
-
->>>>>>> Stashed changes
         <div className="button-group">
           <button type="button" className="btn-secondary" onClick={onPrevious}>
             Previous
@@ -126,15 +65,10 @@ const Step4Compliance = ({ onNext, onPrevious }) => {
             Next
           </button>
         </div>
-<<<<<<< Updated upstream
 
       </form>
     </div>
    </Layout> 
-=======
-      </form>
-    </div>
->>>>>>> Stashed changes
   );
 };
 

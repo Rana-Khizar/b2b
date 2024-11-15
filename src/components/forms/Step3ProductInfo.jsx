@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 import React, { useState } from "react";
 import Layout from "../../Layout/Layout";
 import "./Step3ProductInfo.css";
@@ -100,97 +99,10 @@ const Step3ProductInfo = ({ onNext, onPrevious }) => {
   </div>
 </div>
 
-=======
-import React from "react";
-import "./Step3ProductInfo.css";
-
-const Step3ProductInfo = ({ onNext, onPrevious }) => {
-  return (
-    <div className="form-step">
-      <h2>Product Information</h2>
-      <form>
-        <div className="form-group">
-          <label>Product Categories (Select all that apply):</label>
-          <div className="checkbox-group">
-            <label>
-              <input type="checkbox" /> Boutique
-              <ul>
-                <li>Pashmina</li>
-                <li>Kani Craft</li>
-                <li>Cashmere</li>
-                <li>Silk</li>
-                <li>Bags and Purses</li>
-                <li>Jackets</li>
-                <li>Kaftans</li>
-                <li>Kurtas</li>
-                <li>Pherans</li>
-                <li>Jewelry</li>
-              </ul>
-            </label>
-            <label>
-              <input type="checkbox" /> Interior Decor
-              <ul>
-                <li>Papier-Mâché</li>
-                <li>Bed Linens</li>
-                <li>Sofa and Cushion Covers</li>
-                <li>Room Divider Screens</li>
-                <li>Office Accessories</li>
-                <li>Jeweled Wall Hangings</li>
-                <li>Tapestry</li>
-              </ul>
-            </label>
-            <label>
-              <input type="checkbox" /> Dining & Serving
-              <ul>
-                <li>Copperware</li>
-                <li>Silverware</li>
-                <li>Walnutware</li>
-                <li>Paper-Mâché Ware</li>
-                <li>Enamelware</li>
-              </ul>
-            </label>
-            <label>
-              <input type="checkbox" /> Carpet & Rugs
-              <ul>
-                <li>Bedroom</li>
-                <li>Living Room</li>
-                <li>Dining Room</li>
-                <li>Kitchen</li>
-                <li>Home Library</li>
-                <li>Passageway & Stairs</li>
-                <li>Grand Foyer</li>
-                <li>Parlor Room</li>
-                <li>Cigar Room</li>
-                <li>Namda Embroidery Rugs</li>
-              </ul>
-            </label>
-            <label>
-              <input type="checkbox" /> Other:
-              <input type="text" placeholder="Specify other categories" className="other-input" />
-            </label>
-          </div>
-        </div>
-
-        <div className="form-group">
-          <label htmlFor="numberOfProducts">Number of Products Offered for E-Commerce:</label>
-          <input type="number" id="numberOfProducts" placeholder="Enter number of products" />
-        </div>
-
-        <div className="form-group">
-          <label htmlFor="materialsUsed">Primary Materials Used:</label>
-          <input type="text" id="materialsUsed" placeholder="e.g., wool, silk, wood" />
-        </div>
-
-        <div className="form-group">
-          <label htmlFor="priceRange">Average Price Range of Products:</label>
-          <input type="text" id="priceRange" placeholder="e.g., $20-$100" />
-        </div>
->>>>>>> Stashed changes
 
         <div className="form-group">
           <label>Are your products handmade?</label>
           <div className="radio-group">
-<<<<<<< Updated upstream
             <label>
               <input type="radio" name="handmade" /> Yes
             </label>
@@ -200,18 +112,12 @@ const Step3ProductInfo = ({ onNext, onPrevious }) => {
             <label>
               <input type="radio" name="handmade" /> No
             </label>
-=======
-            <label><input type="radio" name="handmade" /> Yes</label>
-            <label><input type="radio" name="handmade" /> Partially handmade</label>
-            <label><input type="radio" name="handmade" /> No</label>
->>>>>>> Stashed changes
           </div>
         </div>
 
         <div className="form-group">
           <label>Product Packaging Standards:</label>
           <div className="checkbox-group">
-<<<<<<< Updated upstream
             <label>
               <input
                 type="checkbox"
@@ -260,16 +166,6 @@ const Step3ProductInfo = ({ onNext, onPrevious }) => {
                 disabled={!selectedPackagingStandards.includes("other")}
               />
             </div>
-=======
-            <label><input type="checkbox" /> Standard Packaging</label>
-            <label><input type="checkbox" /> Eco-Friendly Packaging</label>
-            <label><input type="checkbox" /> Recycled Materials</label>
-            <label><input type="checkbox" /> Premium Packaging</label>
-            <label>
-              <input type="checkbox" /> Other:
-              <input type="text" placeholder="Specify packaging standards" className="other-input" />
-            </label>
->>>>>>> Stashed changes
           </div>
         </div>
 
@@ -283,10 +179,7 @@ const Step3ProductInfo = ({ onNext, onPrevious }) => {
         </div>
       </form>
     </div>
-<<<<<<< Updated upstream
   </Layout>
-=======
->>>>>>> Stashed changes
   );
 };
 
