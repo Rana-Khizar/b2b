@@ -85,16 +85,35 @@ export default function Header() {
                 </ul>
               </li>
               <li className="nav-item">
+<<<<<<< Updated upstream
+                <Link className="nav-link" to="/multistep">PARTNERSHIP PROCESS</Link>
+=======
+
                 <Link className="nav-link" to="/form">PARTNERSHIP PROCESS</Link>
+>>>>>>> Stashed changes
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/form">PARTNERSHIP REGISTRATION</Link>
+                <Link className="nav-link" to="/">PARTNERSHIP REGISTRATION</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/form">SUBMIT DOCUMENT</Link>
+                <Link className="nav-link" to="/">SUBMIT DOCUMENT</Link>
               </li>
               <li className="nav-item">
+<<<<<<< Updated upstream
+=======
                 <Link className="nav-link" to="/form">APPLICATION STATUS</Link>
+
+                <Link className="nav-link" to="/multistep">PARTNERSHIP PROCESS</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/">PARTNERSHIP REGISTRATION</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/">SUBMIT DOCUMENT</Link>
+              </li>
+              <li className="nav-item">
+>>>>>>> Stashed changes
+                <Link className="nav-link" to="/">APPLICATION STATUS</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/form">BOOK APPOINTMENT</Link>

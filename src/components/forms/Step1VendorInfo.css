@@ -1,0 +1,71 @@
+.form-step {
+  display: flex;
+  flex-direction: column;
+<<<<<<< Updated upstream
+  background-color: #ffffff;
+  border-radius: 10px; 
+  margin: 20px auto;
+  box-shadow: 4px 6px 8px rgb(255, 61, 0);
+  padding: 20px;
+  gap: 1.5rem;
+  max-width: 900px;
+=======
+  background-color: #050a1e;
+  gap: 1.5rem;
+>>>>>>> Stashed changes
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5rem;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.grid-item label {
+  font-weight: bold;
+<<<<<<< Updated upstream
+  color: #050a1e;
+=======
+  color:#050a1e;
+>>>>>>> Stashed changes
+}
+
+.grid-item input {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+<<<<<<< Updated upstream
+  background-color: white;
+  color: #121212;
+=======
+  background-color: #eaecf3;
+  color: #0a0a0a;
+>>>>>>> Stashed changes
+}
+
+.btn-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-primary {
+  background-color: #ff3d00;
+  color: #050a1e;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}

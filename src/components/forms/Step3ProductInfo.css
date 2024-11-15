@@ -1,0 +1,368 @@
+<<<<<<< Updated upstream
+/* Basic styling for the form step */
+.form-step {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Grouping form elements */
+.form-group {
+  margin-bottom: 25px;
+}
+
+.label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Styling for the checkbox group */
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* For expanding category labels */
+.category-label {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  color: #333;
+}
+
+.category-label span {
+  margin-left: 10px;
+}
+
+.category-details {
+  margin-left: 20px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.category-details label {
+  font-size: 14px;
+}
+
+/* For "Other" category input */
+.other-input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.other-input:focus {
+  border-color: #ff3d00;
+}
+
+/* Styling for radio button group */
+.radio-group {
+  display: grid;
+  flex-direction: row;
+  gap: 2px;
+}
+
+.radio-group label {
+  font-size: 16px;
+  text-align: center;
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* Styling for packaging standards checkboxes */
+.checkbox-group input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.checkbox-group input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.checkbox-group input[type="text"]:focus {
+  border-color: #ff3d00;
+}
+
+/* Button styling */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn-secondary,
+.btn-primary {
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-secondary {
+  background-color: #f1f1f1;
+}
+
+.btn-primary {
+  background-color: #ff3d00;
+  color: white;
+}
+
+.btn-secondary:hover,
+.btn-primary:hover {
+  opacity: 0.8;
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+/* Label Styling */
+.form-group label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #cccccc;
+  margin-bottom: 15px;
+  display: block;
+}
+
+/* Styling for the checkbox group */
+.checkbox-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns for checkboxes */
+  gap: 15px; /* Gap between checkboxes */
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #555;
+  cursor: pointer;
+  position: relative;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.checkbox-group .other-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.checkbox-group .other-input-wrapper input[type="text"] {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 350px; /* Restrict input width */
+}
+
+.checkbox-group .other-input-wrapper input[type="text"]:focus {
+  border-color: #ff3d00;
+}
+
+/* Styling for the "Other" checkbox */
+.checkbox-group .other-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: auto;
+  font-size: 16px;
+}
+
+.checkbox-group .other-label input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Styling for checkboxes on hover and focus */
+/* .checkbox-group label:hover {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 5px;
+} */
+
+/* Styling the category details (checkboxes) for rows of three */
+.category-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three items per row */
+  gap: 10px; /* Space between items */
+}
+
+/* Styling for each label inside the category details */
+.category-details label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+}
+
+.category-details input[type="checkbox"] {
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+=======
+/* General Form Styling */
+.form-step {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 700px;
+  }
+  
+  .form-step h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #050A1E;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .form-group input[type="number"],
+  .form-group input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    transition: border-color 0.3s;
+  }
+  
+  .form-group input[type="number"]:focus,
+  .form-group input[type="text"]:focus {
+    border-color: #ff3d00;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 61, 0, 0.5);
+  }
+  
+  /* Checkbox and Radio Group Styling */
+  .checkbox-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .checkbox-group label {
+    margin-bottom: 5px;
+  }
+  
+  .radio-group label {
+    margin-bottom: 10px;
+    display: inline-block;
+    margin-right: 15px;
+  }
+  
+  .other-input {
+    margin-left: 10px;
+    padding: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+  }
+  
+  /* Button Group Styling */
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .btn-primary {
+    background-color: #ff3d00;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #e63600;
+  }
+  
+  .btn-secondary {
+    background-color: #cccccc;
+    color: #333333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #bbbbbb;
+  }
+  
+  /* Nested Lists Styling */
+  .checkbox-group ul {
+    list-style: none;
+    padding-left: 20px;
+  }
+  
+  .checkbox-group ul li {
+    margin-bottom: 5px;
+    color: #555555;
+    font-size: 14px;
+  }
+  
+>>>>>>> Stashed changes

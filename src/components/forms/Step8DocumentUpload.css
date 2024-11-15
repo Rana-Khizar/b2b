@@ -1,0 +1,93 @@
+/* General Form Styling */
+.form-step {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 700px;
+  }
+  
+  .form-step h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #050A1E;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .file-input {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s;
+  }
+  
+  .file-input:focus {
+    border-color: #ff3d00;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 61, 0, 0.5);
+  }
+  
+  .uploaded-file {
+    display: block;
+    font-size: 12px;
+    color: #555555;
+    margin-top: 5px;
+  }
+  
+  /* Button Group Styling */
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .btn-primary {
+    background-color: #ff3d00;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #e63600;
+  }
+  
+  .btn-secondary {
+    background-color: #cccccc;
+    color: #333333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #bbbbbb;
+  }
+  

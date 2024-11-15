@@ -1,0 +1,190 @@
+/* General Form Styling */
+.form-step {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 700px;
+  }
+  
+  .form-step h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #050A1E;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+<<<<<<< Updated upstream
+    margin-bottom: 5px;
+=======
+    margin-bottom: 15px;
+>>>>>>> Stashed changes
+  }
+  
+  .form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .form-group input[type="text"],
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    margin-top: 5px;
+<<<<<<< Updated upstream
+    color: #dee2e6;
+=======
+>>>>>>> Stashed changes
+    transition: border-color 0.3s;
+  }
+  
+  .form-group input[type="text"]:focus,
+  .form-group textarea:focus {
+    border-color: #ff3d00;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 61, 0, 0.5);
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  /* Radio Group Styling */
+  .radio-group {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    color: #555555;
+  }
+  
+  /* Button Group Styling */
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .btn-primary {
+    background-color: #ff3d00;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #e63600;
+  }
+  
+  .btn-secondary {
+    background-color: #cccccc;
+    color: #333333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #bbbbbb;
+  }
+<<<<<<< Updated upstream
+  .form-step {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  .checkbox-group {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .checkbox-group label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .checkbox-group input[type="checkbox"] {
+    margin-right: 8px;
+  }
+  
+  .other-input {
+    margin-top: 5px;
+    margin-left: 5px;
+    padding: 5px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .file-input {
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 14px;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .btn-secondary {
+    background-color: #ccc;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-primary {
+    background-color: #ff3d00;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-secondary:hover,
+  .btn-primary:hover {
+    opacity: 0.9;
+  }
+    
+=======
+  
+>>>>>>> Stashed changes

@@ -7,23 +7,16 @@
 }
 
 
-
-
 .logo{
   width: 10px;
 }
 
 
+<<<<<<< Updated upstream
 
 
-
-
-
-
-
-
-
-
+=======
+>>>>>>> Stashed changes
 /*===============================================
 Template Name: Solutek - Technology & IT Solution HTML5 Template
 Author:  https://themeforest.net/user/themeservices
@@ -65,6 +58,109 @@ Tags:     agency, business, consulting, corporate, cyber security, finance, it a
 29. solutek blog details css
 
 =======================*/
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+.form-step{
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgb(255, 61, 0.4);
+  
+}
+
+
+.multi-step-form {
+  max-width: 2000px;
+  margin: 20px auto;
+  background: #05091D;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgb(255, 61, 0.4);
+}
+
+h1, h2 {
+  color: #050A1E;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  padding: 10px 15px;
+  color: white;
+  background-color: #ff3d00;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #e63600;
+}
+
+/*=====================================
+<-- 0. Step1vendorinfo Css -->
+=======================================*/
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.multi-step-form {
+  max-width: 1500px;
+  margin:  auto;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  color: #050A1E;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  padding: 10px 15px;
+  color: white;
+  background-color: #ff3d00;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #e63600;
+}
 
 /*=====================================
 <-- 01. solutek Nav Menu Area Css -->
