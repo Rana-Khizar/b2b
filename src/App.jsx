@@ -14,7 +14,7 @@ import RegPatner from './components/Section/RegPatner';
 import Tools from './components/Section/Tools';  // Changed the path for uniqueness
 import Dkc from './components/About/DKC/Dkc';
 import PartnerCarousel from './components/About/Team/PartnerCarousel'
-// import Gpresence from './components/About/';
+// import Gpresence from './components/About/Gpresence/Gpresence';
 // import Industry from './components/About/Industry/industryFocus';
 // import Mission from './components/About/Mission/Mission';
 // import OwnerPortfolio from './components/About/OwnerPortfolio/OwnerPortfolio';  
