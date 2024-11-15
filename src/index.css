@@ -10,6 +10,10 @@
 .logo{
   width: 10px;
 }
+
+
+
+
 /*===============================================
 Template Name: Solutek - Technology & IT Solution HTML5 Template
 Author:  https://themeforest.net/user/themeservices
@@ -53,10 +57,9 @@ Tags:     agency, business, consulting, corporate, cyber security, finance, it a
 =======================*/
 body {
   font-family: Arial, sans-serif;
-  background-color: #05091d;
+  background-color:#05091d;;
   margin: 0;
   padding: 0;
-  
 }
 .form-step{
   padding: 20px;
@@ -64,6 +67,7 @@ body {
   box-shadow: 0 4px 6px rgb(255, 61, 0.4);
   
 }
+
 
 .multi-step-form {
   max-width: 2000px;
