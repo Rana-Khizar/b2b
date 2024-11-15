@@ -529,10 +529,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	      var _this6 = this;
 	
 	      if (!this.isInput) return;
-	      this.el.addEventListener('focus', function (e) {
+	      this.el.addEventListener('focus', function () {
 	        _this6.stop();
 	      });
-	      this.el.addEventListener('blur', function (e) {
+	      this.el.addEventListener('blur', function () {
 	        if (_this6.el.value && _this6.el.value.length !== 0) {
 	          return;
 	        }

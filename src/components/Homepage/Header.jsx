@@ -53,13 +53,13 @@ export default function Header() {
                 <ul className="dropdown-menu sub-menu" aria-labelledby="navbarDropdown">
                   <li><Link className="dropdown-item" to="/dkc">DKC Legacy</Link></li>
                   <li><Link className="dropdown-item" to="/partner">Meet the Team</Link></li>
-                  <li><Link className="dropdown-item" to="#">Mission & Vision</Link></li>
+                  <li><Link className="dropdown-item" to="/mission">Mission & Vision</Link></li>
                   <li><Link className="dropdown-item" to="/brand">The Brand Identity</Link></li>
-                  <li><Link className="dropdown-item" to="#">Global Presence</Link></li>
-                  <li><Link className="dropdown-item" to="#">Industry Focu</Link></li>
+                  <li><Link className="dropdown-item" to="/gpresence">Global Presence</Link></li>
+                  <li><Link className="dropdown-item" to="/industry">Industry Focu</Link></li>
                   <li><Link className="dropdown-item" to="#">Membership</Link></li>
                   <li><Link className="dropdown-item" to="#">Certification</Link></li>
-                  <li><Link className="dropdown-item" to="#">Ownership Portfolio</Link></li>
+                  <li><Link className="dropdown-item" to="/ownerportfolio">Ownership Portfolio</Link></li>
                 </ul>
               </li>
 
@@ -85,16 +85,16 @@ export default function Header() {
                 </ul>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/form">PARTNERSHIP PROCESS</Link>
+                <Link className="nav-link" to="/infobusiness">PARTNERSHIP PROCESS</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/form">PARTNERSHIP REGISTRATION</Link>
+                <Link className="nav-link" to="/contactForm">PARTNERSHIP REGISTRATION</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/form">SUBMIT DOCUMENT</Link>
+                <Link className="nav-link" to="/taxform">SUBMIT DOCUMENT</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/form">APPLICATION STATUS</Link>
+                <Link className="nav-link" to="/VendorForm">APPLICATION STATUS</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/form">BOOK APPOINTMENT</Link>

@@ -1,0 +1,125 @@
+/* General Reset and Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #005b96;
+  }
+  
+  /* Form Container */
+  form {
+    background-color: #fff;
+    width: 80%;
+    max-width: 700px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Fieldset and Legend Styling */
+  fieldset {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  legend {
+    font-weight: bold;
+    color: #005b96;
+    padding: 0 10px;
+  }
+  
+  /* Label and Input Styling */
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="url"],
+  input[type="number"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  input[type="checkbox"],
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  /* Checkbox and Radio Label Styling */
+  input[type="checkbox"] + label,
+  input[type="radio"] + label {
+    display: inline-block;
+    font-weight: normal;
+    margin-bottom: 10px;
+  }
+  
+  /* Button Styling */
+  button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #005b96;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #004080;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 600px) {
+    form {
+      padding: 20px;
+      width: 90%;
+    }
+  
+    label,
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="url"],
+    input[type="number"],
+    textarea,
+    button[type="submit"] {
+      font-size: 14px;
+    }
+  }

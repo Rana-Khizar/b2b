@@ -11,9 +11,17 @@ import 'aos/dist/aos.css';
 import Brand from './components/About/Brand/Brand';
 import Section from './components/Section/Section';
 import RegPatner from './components/Section/RegPatner';
-import Tools from './components/Section/Tools';  // Changed the path for uniqueness
+import Tools from './components/Section/Tools';  
 import Dkc from './components/About/DKC/Dkc';
 import PartnerCarousel from './components/About/Team/PartnerCarousel'
+import Gpresence from './components/About/Gpresence/Gpresence';
+import Industry from './components/About/Industry/industryFocus';
+import Mission from './components/About/Mission/Mission';
+import OwnerPortfolio from './components/About/OwnerPortfolio/OwnerPortfolio';  
+import ContactForm from './components/ECommerce/Forms/contactForm';
+import Infobusiness from './components/Ecommerce/Forms/venderInfo';
+import TaxForm from './components/ECommerce/Forms/taxForm';
+import VendorForm from './components/Ecommerce/Forms/VendorForm';
 
 
 function App() {
@@ -27,8 +35,16 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/ecommerce' element={<Ecommerce />} />
+          <Route path='/contactForm' element={<ContactForm/> } />
+          <Route path='/infobusiness' element={<Infobusiness />} />
+          <Route path='/taxform' element={<TaxForm />} />
+          <Route path='/VendorForm' element={<VendorForm />} />
           <Route path='/brand' element={<Brand />} />
           <Route path='/dkc' element={<Dkc />} />
+          <Route path='/gpresence' element={<Gpresence />} />
+          <Route path='/industry' element={<Industry />} />
+          <Route path='/mission' element={<Mission />} />
+          <Route path='/ownerportfolio' element={<OwnerPortfolio />} />
           <Route path='/partner' element={<PartnerCarousel/>}/>
           <Route path='/section' element={<Section />} />
           <Route path='/reg-partner' element={<RegPatner />} />

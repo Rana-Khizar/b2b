@@ -1,9 +1,8 @@
 import React from 'react'
-import Header from './components/Homepage/Header'
 import Banner from './components/Homepage/Banner'
-import FeatureArea from './components/Homepage/Features'
+
 // import AboutArea from './components/Homepage/About'
-import Footer from './components/Homepage/Footer'
+
 import Ecommerce from './components/ECommerce/Ecommerce'
 import AboutSection from './components/AboutSection/AboutSection'
 import CounterSection from './components/CounterSection/CounterSection'
@@ -15,12 +14,13 @@ import Service1 from './service/Service1'
 import FAQ from './components/FAQS/FAQ'
 import ReactTypingEffect from 'react-typing-effect';
 import Layout from './Layout/Layout'
-import About from './components/Homepage/About/About'
+//import About from './components/Homepage/About/About'
 import Section from './components/Section/Section'
 import Section1 from './components/Section/Section1'
 import Tools from './components/Section/Tools'
 import Regpatner from './components/Section/RegPatner'
 import PatnerModel from './components/Section/PatnerModel'
+//import Form1 from './components/forms/Form1'
 
 
 function Home() {
@@ -31,8 +31,7 @@ function Home() {
                 <div className='d-none d-md-block'>
                     <Card />
                 </div>
-                {/* <Ecommerce/> */}
-
+                <Ecommerce/>
                 <AboutSection />
                 <CounterSection />
                 <StudiesSection />
@@ -54,4 +53,4 @@ function Home() {
     )
 }
 
-export default Home
+export default Home;

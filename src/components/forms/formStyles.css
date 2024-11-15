@@ -1,0 +1,83 @@
+/* src/formStyles.css */
+
+/* Base styling */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+  }
+  
+  .form-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #333333;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-label {
+    font-weight: 600;
+    color: #555555;
+  }
+  
+  .form-control {
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 1rem;
+    color: #495057;
+  }
+  
+  .form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  button {
+    width: 100px;
+    margin-top: 1rem;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  button:hover {
+    transform: translateY(-2px);
+  }
+  
+  button[type="button"]:first-of-type {
+    background-color: #6c757d;
+    color: #ffffff;
+    border: none;
+  }
+  
+  button[type="button"]:first-of-type:hover {
+    background-color: #5a6268;
+  }
+  
+  button[type="button"]:last-of-type {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+  }
+  
+  button[type="button"]:last-of-type:hover {
+    background-color: #0056b3;
+  }
+  

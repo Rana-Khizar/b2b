@@ -15,6 +15,7 @@ import teampic11 from '../../../assets/Teampics/11.jpg';
 import teampic12 from '../../../assets/Teampics/12.jpg';
 import teampic13 from '../../../assets/Teampics/13.jpg';
 import teampic14 from '../../../assets/Teampics/14.jpg';
+import test from '../../../assets/test-bg.png';
 
 const PartnerCarousel = () => {
   const partners = [
@@ -127,56 +128,58 @@ const PartnerCarousel = () => {
   };
 
   return (
-    //<div className="carousel-container bg-blue">  
+    <div className="carousel-container  bg-blue">
     <Layout>
-    
-    <div className="carousel ">
-      <h1 className="carousel__title ">Meet Our Partners</h1>
-      
-      <div className="carousel__container">
-        <div className="carousel__track">
-          {getVisiblePartners().map((partner, index) => {
-            const position = index === 0 ? 'left' : index === 1 ? 'center' : 'right';
-            
-            return (
-              <div
-                key={partner.id}
-                className={`carousel__card carousel__card--${position}`}
-              >
-                <div className="carousel__card-inner ">
-                  <img
-                    src={partner.image}
-                    alt={partner.name}
-                    className="carousel__image"
-                  />
-                  <div className="carousel__content bg-theme">
-                    <h3 className="carousel__name carousel__content--center">{partner.name}</h3>
-                    <p className="carousel__title-text">{partner.title}</p>
+      <div className="carousel">
+        <div className="carousel__background">
+          <img src={test} alt="Background" />
+        </div>
+        <h1 className="carousel__title">Meet Our Partners</h1>
+        <div className="carousel__container">
+          <div className="carousel__track">
+            {getVisiblePartners().map((partner, index) => {
+              const position = index === 0 ? 'left' : index === 1 ? 'center' : 'right';
+  
+              return (
+                <div
+                  key={partner.id}
+                  className={`carousel__card carousel__card--${position}`}
+                >
+                  <div className="carousel__card-inner">
+                    <img
+                      src={partner.image}
+                      alt={partner.name}
+                      className="carousel__image"
+                    />
+                    <div className="carousel__content bg-theme">
+                      <h3 className="carousel__name carousel__content--center">
+                        {partner.name}
+                      </h3>
+                      <p className="carousel__title-text">{partner.title}</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            );
-          })}
-        </div>
-
-        <div className="carousel__nav">
-          <button className="carousel__button" onClick={prevSlide}>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <polyline points="15 18 9 12 15 6"></polyline>
-            </svg>
-          </button>
-          
-          <button className="carousel__button" onClick={nextSlide}>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <polyline points="9 18 15 12 9 6"></polyline>
-            </svg>
-          </button>
+              );
+            })}
+          </div>
+  
+          <div className="carousel__nav">
+            <button className="carousel__button" onClick={prevSlide}>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button className="carousel__button" onClick={nextSlide}>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
-    </div>
-  
     </Layout>
- // </div>
+  </div>
+  
   );
 };
 

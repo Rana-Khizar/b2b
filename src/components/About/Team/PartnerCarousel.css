@@ -1,24 +1,56 @@
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.carousel__background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .carousel {
   max-width: 1200px;
   margin: 0 auto;
   padding: 3rem 1rem;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #0a0a0a;
 }
 
 .carousel__title {
   text-align: center;
+  color: black;
   font-size: 2rem;
   font-weight: bold;
-  /* color: white; */
+  z-index: 50;
+  margin-bottom: 20px;
 }
 
 .carousel__container {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .carousel__track {
+  display: flex;
+  gap: 20px;
   position: relative;
   height: 500px;
-  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -38,6 +70,7 @@
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(234, 178, 82, 0.1);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .carousel__image {
@@ -49,9 +82,8 @@
 
 .carousel__content {
   position: relative;
-  display: block;
   text-align: center;
-  background-color: #FF3D00;
+  background-color: #ff3d00;
   opacity: 0.7;
   padding: 26px 0px 30px;
   margin-top: -85px;
@@ -60,15 +92,6 @@
   transition: all 500ms ease;
   z-index: 2;
   border-radius: 25px 25px 0 0;
-  /* position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 1.2rem;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  background: linear-gradient(to bottom, rgba(96, 95, 95, 0.5), transparent);
-  transition: all 0.5s ease-in-out; */
 }
 
 .carousel__name {
@@ -124,26 +147,56 @@
   filter: grayscale(0%);
 }
 
-/* Navigation */
+
+/* Navigation Buttons */
 .carousel__nav {
+  position: absolute;
+  bottom: -30px; /* Place the buttons at the bottom of the carousel */
+  width: 100%;
   display: flex;
   justify-content: center;
   gap: 1rem;
+  z-index: 3;
 }
 
 .carousel__button {
-  background: #e5e7eb;
+  background: rgba(0, 0, 0, 0.6);
   border: none;
-  border-radius: 9999px;
-  padding: 0.5rem;
+  color: white;
+  padding: 10px;
+  border-radius:50% ;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background 0.3s ease-in-out;
+  
 }
 
 .carousel__button:hover {
-  background: #d1d5db;
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .carousel__button svg {
   display: block;
+  fill: white;
+}
+.carousel__container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px; /* Add space below the cards */
+}
+
+.carousel__button--left {
+  /* No specific left positioning needed, handled by flexbox in .carousel__nav */
+}
+
+.carousel__button--right {
+  /* No specific right positioning needed, handled by flexbox in .carousel__nav */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .carousel__button {
+    padding: 20px;
+  }
 }
