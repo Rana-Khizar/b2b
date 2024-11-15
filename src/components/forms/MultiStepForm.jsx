@@ -29,11 +29,7 @@ const MultiStepForm = () => {
       case 1:
         return <Step1VendorInfo onNext={handleNext} updateFormData={updateFormData} />;
       case 2:
-<<<<<<< Updated upstream
         return <Step2BusinessDetails onNext={handleNext} onPrevious={handlePrevious} updateFormData={updateFormData} />;
-=======
-         return <Step2BusinessDetails onNext={handleNext} onPrevious={handlePrevious} updateFormData={updateFormData} />;
->>>>>>> Stashed changes
       case 3:
         return <Step3ProductInfo onNext={handleNext} onPrevious={handlePrevious} updateFormData={updateFormData} />;
       case 4:
@@ -50,13 +46,10 @@ const MultiStepForm = () => {
         return <Step9Acknowledgement onNext={handleNext} onPrevious={handlePrevious} updateFormData={updateFormData} />;
       case 10:
         return <Step10Signature onPrevious={handlePrevious} formData={formData} />;
-<<<<<<< Updated upstream
+
       default:
         return null;
-=======
-       default:
-         return null;
->>>>>>> Stashed changes
+
     }
   };
 
