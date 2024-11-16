@@ -1,11 +1,12 @@
 import React from 'react'
 import Layout from '../../../Layout/Layout'
 
-export default function Industry() {
+export default function memberShip() {
   return (
     <Layout>
     <div>
-      <h1>Industry Focus</h1>
+        <h2>Membership</h2>
+      
     </div>
     </Layout>
   )

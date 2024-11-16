@@ -13,7 +13,9 @@ import Section from './components/Section/Section';
 import RegPatner from './components/Section/RegPatner';
 import Tools from './components/Section/Tools';  // Changed the path for uniqueness
 import Dkc from './components/About/DKC/Dkc';
+import Certificate from './components/About/Certificate/certificate';
 import PartnerCarousel from './components/About/Team/PartnerCarousel'
+import MemberShip from './components/About/Membership/memberShip';
 import Gpresence from './components/About/Gpresence/Gpresence';
 import Industry from './components/About/IndustryFocus/Industry';
 import Mission from './components/About/Mission/Mission';
@@ -34,10 +36,12 @@ function App() {
           <Route path='/ecommerce' element={<Ecommerce />} />
           <Route path='/brand' element={<Brand />} />
           <Route path='/dkc' element={<Dkc />} />
-          <Route Path='/gpresence' element={<Gpresence/>}/>
-          <Route Path='/industry' element={<Industry/>}/>
-          <Route Path='/mission' element={<Mission/>}/>
-          <Route Path='/OwnerPortfolio' element={<OwnerPortfolio/>}/>
+          <Route path='/gpresence' element={<Gpresence />} />
+          <Route path='/industry' element={<Industry />} />
+          <Route path='/mission' element={<Mission />} />
+          <Route path='/membership' element={<MemberShip />} />
+          <Route path='/certificate' element={<Certificate />} />
+          <Route path='/owner-portfolio' element={<OwnerPortfolio />} />
           <Route path='/partner' element={<PartnerCarousel/>}/>
           <Route path='/section' element={<Section />} />
           <Route path='/reg-partner' element={<RegPatner />} />
