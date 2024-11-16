@@ -56,7 +56,7 @@ export default function Header() {
                   <li><Link className="dropdown-item" to="#">Mission & Vision</Link></li>
                   <li><Link className="dropdown-item" to="/brand">The Brand Identity</Link></li>
                   <li><Link className="dropdown-item" to="#">Global Presence</Link></li>
-                  <li><Link className="dropdown-item" to="#">Industry Focu</Link></li>
+                  <li><Link className="dropdown-item" to="#">Industry Focus</Link></li>
                   <li><Link className="dropdown-item" to="#">Membership</Link></li>
                   <li><Link className="dropdown-item" to="#">Certification</Link></li>
                   <li><Link className="dropdown-item" to="#">Ownership Portfolio</Link></li>
