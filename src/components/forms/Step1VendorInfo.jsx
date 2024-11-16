@@ -28,6 +28,7 @@ const Step1VendorInfo = ({ onNext, updateFormData }) => {
     <Layout>
     <div className="form-step">
       <h2>Vendor Information</h2>
+      <h4>Section A</h4>
       <div className="grid-container">
         <div className="grid-item">
           <label htmlFor="businessName">Business Name:</label>
