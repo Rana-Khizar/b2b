@@ -1,6 +1,11 @@
 /* Basic styling for the form step */
 .form-step {
   padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 1200px;
   font-family: Arial, sans-serif;
 }
 
@@ -57,12 +62,16 @@ h2 {
   margin-left: 20px;
   margin-top: 10px;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  flex-direction: row; /* Change from column to row */
   gap: 5px;
 }
 
 .category-details label {
   font-size: 14px;
+  display: flex;
+  align-items: center; /* Align text vertically with the checkbox */
+  margin: 0;
 }
 
 /* For "Other" category input */
@@ -99,6 +108,7 @@ h2 {
 /* Styling for packaging standards checkboxes */
 .checkbox-group input[type="checkbox"] {
   margin-right: 10px;
+  vertical-align: middle;
 }
 
 .checkbox-group input[type="text"] {
@@ -152,9 +162,14 @@ h2 {
 .form-group label {
   font-size: 18px;
   font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+  /* justify-items: center; */
+  /* justify-content: center; */
+  align-items: center;
   color: #cccccc;
   margin-bottom: 15px;
-  display: block;
+  
 }
 
 /* Styling for the checkbox group */
@@ -200,6 +215,7 @@ h2 {
 
 .checkbox-group .other-input-wrapper input[type="text"]:focus {
   border-color: #ff3d00;
+  vertical-align: middle;
 }
 
 /* Styling for the "Other" checkbox */
@@ -225,6 +241,11 @@ h2 {
 /* Styling the category details (checkboxes) for rows of three */
 .category-details {
   display: grid;
+  margin-left: 20px;
+  margin-top: 10px;
+  align-items: center;
+  flex-direction: row; /* Change from column to row */
+  gap: 5px;
   grid-template-columns: repeat(3, 1fr); /* Three items per row */
   gap: 10px; /* Space between items */
 }

@@ -35,6 +35,7 @@ const Step1VendorInfo = ({ onNext, updateFormData }) => {
             type="text"
             id="businessName"
             name="businessName"
+            placeholder="Enter business name"
             value={vendorInfo.businessName}
             onChange={handleChange}
             required
@@ -46,6 +47,7 @@ const Step1VendorInfo = ({ onNext, updateFormData }) => {
             type="text"
             id="registrationNumber"
             name="registrationNumber"
+            placeholder="Enter registration number"
             value={vendorInfo.registrationNumber}
             onChange={handleChange}
             required
@@ -57,6 +59,7 @@ const Step1VendorInfo = ({ onNext, updateFormData }) => {
             type="text"
             id="country"
             name="country"
+            placeholder="Enter country of registration"
             value={vendorInfo.country}
             onChange={handleChange}
             required
@@ -68,6 +71,7 @@ const Step1VendorInfo = ({ onNext, updateFormData }) => {
             type="text"
             id="contactPerson"
             name="contactPerson"
+            placeholder="Enter primary contact person"
             value={vendorInfo.contactPerson}
             onChange={handleChange}
             required
@@ -79,6 +83,7 @@ const Step1VendorInfo = ({ onNext, updateFormData }) => {
             type="text"
             id="jobTitle"
             name="jobTitle"
+            placeholder="Enter job title"
             value={vendorInfo.jobTitle}
             onChange={handleChange}
             required
@@ -90,6 +95,7 @@ const Step1VendorInfo = ({ onNext, updateFormData }) => {
             type="email"
             id="email"
             name="email"
+            placeholder="Enter contact emails"
             value={vendorInfo.email}
             onChange={handleChange}
             required
@@ -101,6 +107,7 @@ const Step1VendorInfo = ({ onNext, updateFormData }) => {
             type="tel"
             id="phone"
             name="phone"
+            placeholder="Enter phone number"
             value={vendorInfo.phone}
             onChange={handleChange}
             required
@@ -112,6 +119,7 @@ const Step1VendorInfo = ({ onNext, updateFormData }) => {
             type="url"
             id="website"
             name="website"
+            placeholder="Enter website or online store URL"
             value={vendorInfo.website}
             onChange={handleChange}
           />

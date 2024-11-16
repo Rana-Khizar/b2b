@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  max-width: 600px; /* Adjust the max width as needed */
+  max-width: 900px; /* Adjust the max width as needed */
   margin: 0 auto; /* Center the form */
   padding: 20px;
   background-color: #f8f9fa;
@@ -23,6 +23,7 @@ h2 {
 
 .checkbox-label {
   display: flex;
+  margin: 0;
   align-items: center;
   font-size: 1.1rem; /* Increase font size for better readability */
 }
@@ -31,6 +32,7 @@ h2 {
   width: 20px; /* Increase the size of the checkbox */
   height: 20px; /* Increase the size of the checkbox */
   margin-right: 10px; /* Space between checkbox and text */
+  vertical-align: middle;
 }
 
 .button-group {
