@@ -5,7 +5,7 @@ export default function memberShip() {
   return (
     <Layout>
     <div>
-        <h2>Membership</h2>
+        <h1>Membership</h1>
       
     </div>
     </Layout>
