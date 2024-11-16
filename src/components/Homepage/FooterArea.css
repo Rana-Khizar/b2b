@@ -1,6 +1,7 @@
 .footer-area {
     background-image: url(../../assets//solutek-imagess/footer-bg.png);
-    padding: 40px 20px;
+    padding: 20px 0px;
+    max-width: 1500px;
     color: #b3b3b3;
     font-size: 0.9rem;
   }

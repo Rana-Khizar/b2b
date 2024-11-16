@@ -681,7 +681,7 @@ input, select {
   
   h5.section-sub-title {
     font-size: 16px;
-    color: #ff3c00;
+    color: #0d0d0d;
     font-weight: 600;
     font-family: "Poppins";
     border-radius: 20px;
@@ -708,10 +708,10 @@ input, select {
   }
   
   h1.section-main-title {
-    font-size: 42px;
+    font-size: 31px;
     line-height: 45px;
     color: #050a1e;
-    font-weight: 700;
+    font-weight: 500;
     font-family: "Poppins";
     margin: 0;
   }
@@ -2728,7 +2728,9 @@ input, select {
   
   .footer-area {
     background: url(assets/images/footer-bg.png);
+    background-color: #050a1e;
     background-position: center;
+    max-width: 1200px;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0 0 20px;

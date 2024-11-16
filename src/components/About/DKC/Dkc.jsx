@@ -1,24 +1,87 @@
 import React, { useState } from 'react';
 import imgthumb from '../../../assets/faq-thumb.png';
+import faq1 from "../../../assets/faq1.png";
 import Layout from '../../../Layout/Layout';
 import './Dkc.css';
 
 function Dkc() {
-  const [activeIndex, setActiveIndex] = useState(null);
-
-  const toggleAccordion = (index) => {
-    setActiveIndex(activeIndex === index ? null : index);
-  };
+  const [openIndex, setOpenIndex] = useState(null);
+  
+	const toggleQuestion = (index) => {
+	  setOpenIndex(openIndex === index ? null : index);
+	};
+  
+	const faqs = [
+	  {
+		question: "1. Unwavering Values and Principles",
+		answer: "Appropriately promote enterprise-wide vortals through innovative information evolve go forward markets whereas synergistic applications power full sound quality vectors without equity invested best practices revolutionize enterprise-wide vortals through innovative."
+	  },
+	  {
+		question: "2.	Transformational Social and Cultural Impact",
+		answer: "DKC’s influence extends far beyond business objectives, actively contributing to cultural preservation, artisan empowerment, and meaningful community development. By championing Kashmiri craftsmanship, we secure a legacy that celebrates and sustains a heritage rich in artistry and history."
+	  },
+	  {
+		question: "3.	Innovation and Industry Leadership",
+		answer: "DKC’s legacy is a testament to years of earned respect and credibility. By fostering strong, authentic relationships with customers, partners, and artisans, we have built an unwavering foundation of trust that underscores every facet of our operations."
+	  },
+	  {
+		question: "4.	Enduring Reputation and Trust",
+		answer: "Our services span across multiple industries, including healthcare, finance, technology, and education, providing tailored solutions to meet industry-specific challenges."
+	  },
+    {
+      question: "5.	Sustainability and Global Responsibility",
+      answer: "Driven by a commitment to environmental stewardship and ethical business practices, DKC ensures that our work aligns with the needs of future generations. Through sustainable sourcing, eco-friendly logistics, and fair trade, we leave a positive and enduring impact on the planet and its people."
+    }
+	];
 
   return (
     <Layout>
-        <div className="faq-area style-two">
+
+<div className="faq-area">
+		<div className="container">
+		  <div className="row align-items-center">
+			<div className="col-lg-6 col-md-12">
+			  <div className="section-title text-left">
+				<h5 className="section-sub-title">De Koshur Crafts Legacy</h5>
+				<h1 className="section-main-title"><span>A Legacy of Excellence and Empowerment</span></h1>
+        </div>
+        <div className="faq-thumb">
+				<img src={faq1} alt="faq1" />
+			  </div>
+			  
+			</div>
+			<div className="col-lg-6 col-md-12">
+			  <div className="tab_container">
+				<div className="accordion">
+				  {faqs.map((faq, index) => (
+					<div key={index} className="faq-item">
+					  <button 
+						className="faq-question" 
+						onClick={() => toggleQuestion(index)}
+					  >
+						<span>{faq.question}</span>
+						<span>{openIndex === index ? '-' : '+'}</span>
+					  </button>
+					  {openIndex === index && (
+						<div className="faq-answer">{faq.answer}</div>
+					  )}
+					</div>
+				  ))}
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+
+
+        {/* <div className="faq-area style-two">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-6 col-md-12">
             <div className="section-title text-left">
-              <h6 className="section-sub-title">Client Review</h6>
-              <h1 className="section-main-title">Most Common <span>Question?</span></h1>
+              <h6 className="section-sub-title">De Koshur Crafts Legacy</h6>
+              <h1 className="section-main-title"><span>A Legacy of Excellence and Empowerment</span></h1>
             </div>
             <div className="tab_container">
               <div id="tab1" className="tab_content">
@@ -79,7 +142,7 @@ function Dkc() {
           </div>
         </div>
       </div>
-    </div>
+    </div> */}
     </Layout>
   );
 }

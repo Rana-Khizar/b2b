@@ -1,71 +1,94 @@
 .faq-area {
-    padding: 80px 0;
-    background-image: url('../../../assets/test-bg.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  /* The rest of the CSS remains the same */
+  padding: 20px 0;
+}
+
+.section-title {
+  margin-bottom: 20px;
+
+}
+.faq-thumb{
+  width: 400px;
+}
+.section-sub-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #060606;
+}
+
+.section-main-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.section-main-title span {
+  color: orange;
+}
+
+.faq-thumb img {
+  justify-content: center;
+  width: 100%;
+  max-width: 350px;
+
+  height: auto;}
+
+.faq-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.faq-title span {
+  color: orange;
+}
+
+.faq-description {
+  color: #888;
+  margin-bottom: 20px;
+}
+
+.tab_container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
 .accordion {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.faq-question {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #333;
+  width: 100%;
+  text-align: left;
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  outline: none;
+}
+
+.faq-question:hover {
+  color: orange;
+}
+
+.faq-answer {
+  padding: 15px;
+  color: #555;
+  background-color: #f1f1f1;
+  display: block;
+}
+
+.faq-answer p {
+  margin: 0;
   
-  .accordion li {
-    border-bottom: 1px solid #e0e0e0;
-  }
-  
-  .accordion li a {
-    display: block;
-    padding: 15px 0;
-    color: #333;
-    font-size: 18px;
-    font-weight: 600;
-    text-decoration: none;
-    position: relative;
-    cursor: pointer;
-  }
-  
-  .accordion li a.active,
-  .accordion li a:hover {
-    color: #f44336;
-  }
-  
-  /* .accordion li a::after {
-    content: '';
-    position: absolute;
-    right: 0;
-    font-size: 24px;
-    font-weight: 600;
-    transition: transform 0.3s;
-  }
-  
-  .accordion li a.active::after {
-    content: '';
-    transform: rotate(0deg);
-  }
-   */
-  .accordion li p {
-    padding: 15px 0;
-    margin-bottom: 0;
-    display: none;
-  }
-  
-  .accordion li.active p {
-    display: block;
-  }
-  .accordion li a::after {
-    content: '+';
-    position: absolute;
-    right: 0;
-    font-size: 24px;
-    font-weight: 600;
-    transition: transform 0.3s;
-  }
-  
-  .accordion li.active a::after {
-    content: '-';
-    transform: rotate(0deg);
-  }
+}  

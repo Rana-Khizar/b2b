@@ -1680,6 +1680,7 @@ h3.blog-title-two a {
 
 .footer-area {
     margin: 0;
+    max-width: 1200px;
 }
 .footer-widget.left {
     margin-bottom: 30px;
