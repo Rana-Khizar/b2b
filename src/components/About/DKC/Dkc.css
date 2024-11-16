@@ -1,0 +1,71 @@
+.faq-area {
+    padding: 80px 0;
+    background-image: url('../../../assets/test-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  /* The rest of the CSS remains the same */
+.accordion {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .accordion li {
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .accordion li a {
+    display: block;
+    padding: 15px 0;
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .accordion li a.active,
+  .accordion li a:hover {
+    color: #f44336;
+  }
+  
+  /* .accordion li a::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    font-size: 24px;
+    font-weight: 600;
+    transition: transform 0.3s;
+  }
+  
+  .accordion li a.active::after {
+    content: '';
+    transform: rotate(0deg);
+  }
+   */
+  .accordion li p {
+    padding: 15px 0;
+    margin-bottom: 0;
+    display: none;
+  }
+  
+  .accordion li.active p {
+    display: block;
+  }
+  .accordion li a::after {
+    content: '+';
+    position: absolute;
+    right: 0;
+    font-size: 24px;
+    font-weight: 600;
+    transition: transform 0.3s;
+  }
+  
+  .accordion li.active a::after {
+    content: '-';
+    transform: rotate(0deg);
+  }

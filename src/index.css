@@ -1974,7 +1974,7 @@ input, select {
   }
   
   .accordion li a {
-    position: relative;
+    position: block;
     width: 100%;
     display: block;
     cursor: pointer;
