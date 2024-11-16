@@ -53,13 +53,13 @@ export default function Header() {
                 <ul className="dropdown-menu sub-menu" aria-labelledby="navbarDropdown">
                   <li><Link className="dropdown-item" to="/dkc">DKC Legacy</Link></li>
                   <li><Link className="dropdown-item" to="/partner">Meet the Team</Link></li>
-                  <li><Link className="dropdown-item" to="#">Mission & Vision</Link></li>
+                  <li><Link className="dropdown-item" to="/mission">Mission & Vision</Link></li>
                   <li><Link className="dropdown-item" to="/brand">The Brand Identity</Link></li>
-                  <li><Link className="dropdown-item" to="#">Global Presence</Link></li>
-                  <li><Link className="dropdown-item" to="#">Industry Focus</Link></li>
+                  <li><Link className="dropdown-item" to="/gpresence">Global Presence</Link></li>
+                  <li><Link className="dropdown-item" to="/industry">Industry Focus</Link></li>
                   <li><Link className="dropdown-item" to="#">Membership</Link></li>
                   <li><Link className="dropdown-item" to="#">Certification</Link></li>
-                  <li><Link className="dropdown-item" to="#">Ownership Portfolio</Link></li>
+                  <li><Link className="dropdown-item" to="/OwnerPortfolio">Ownership Portfolio</Link></li>
                 </ul>
               </li>
 
