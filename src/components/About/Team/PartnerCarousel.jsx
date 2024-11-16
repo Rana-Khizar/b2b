@@ -174,8 +174,62 @@ const PartnerCarousel = () => {
         </div>
       </div>
     </div>
-  
-    </Layout>
+
+    {/* here the down section */}
+    <div class="project-area style-three">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-7">
+        <div class="section-title text-left">
+          <h5 class="section-sub-title">OUR PROJECT NOW</h5>
+          <h1 class="section-main-title">The Essence of Our Easy</h1>
+          <h1 class="section-main-title">Working Process</h1>
+        </div>
+      </div>
+    </div>
+    <div class="row project-bs">
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="project-single-box box-1">
+          <div class="projects-content">
+            <h4 class="project-title"><a href="project-details.html">Requirement</a></h4>
+            <p class="project-des">Paradigms open-source in working process.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="project-single-box box-2">
+          <div class="projects-content">
+            <h4 className="project-title"><a href="project-details.html">UI/UX Design</a></h4>
+            <p className="project-des">Paradigms open-source in working process.</p>
+          </div>
+        </div>
+      </div>
+      <div className="col-xl-3 col-lg-4 col-md-6">
+        <div className="project-single-box box-3">
+          <div className="projects-content">
+            <h4 className="project-title"><a href="project-details.html">Prototype</a></h4>
+            <p className="project-des">Paradigms open-source in working process.</p>
+          </div>
+        </div>
+      </div>
+      <div className="col-xl-3 col-lg-4 col-md-6">
+        <div className="project-single-box down box-4">
+          <div className="projects-content">
+            <h4 className="project-title"><a href="project-details.html">Development</a></h4>
+            <p className="project-des">Paradigms open-source in working process.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div className="project-bg-shape1 moveLeftBounce">
+    <img src="assets/images/home-two/project-rs.png" alt="Shape" />
+  </div>
+  <div className="project-bg-shape2 bounce-animate3">
+    <img src="assets/images/home-two/project-ws.png" alt="Shape" />
+  </div>
+</div>
+  </Layout>
  // </div>
   );
 };
