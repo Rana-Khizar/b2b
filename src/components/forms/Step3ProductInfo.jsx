@@ -96,6 +96,121 @@ const Step3ProductInfo = ({ onNext, onPrevious }) => {
       </div>
     </div>
     {/* Add more categories as needed */}
+    <div className="category">
+      <span className="category-title">Dininning Serving</span>
+      <div className="category-details">
+        <label>
+          <input type="checkbox" />  Copperware
+        </label>
+        <label>
+          <input type="checkbox" /> Silverware
+        </label>
+        <label>
+          <input type="checkbox" />  Walnutware
+        </label>
+        <label>
+          <input type="checkbox" /> Papermachieware
+        </label>
+        <label>
+          <input type="checkbox" />  Enamelware
+        </label>
+      </div>
+    </div>
+
+    <div className="category">
+      <span className="category-title">Carpet&Rugs</span>
+      <div className="category-details">
+        <label>
+          <input type="checkbox" /> Bedroom
+        </label>
+        <label>
+          <input type="checkbox" /> Living Room
+        </label>
+        <label>
+          <input type="checkbox" /> Dining Room
+        </label>
+        <label>
+          <input type="checkbox" /> Kitchen
+        </label>
+        <label>
+          <input type="checkbox" /> Home Library
+        </label>
+        <label>
+          <input type="checkbox" /> Passageway & Stairs
+        </label>
+        <label>
+          <input type="checkbox" /> Grand Foyer
+        </label>
+        <label>
+          <input type="checkbox" /> Parlor Room
+        </label>
+        <label>
+          <input type="checkbox" /> Cigar Room
+        </label>
+        <label>
+          <input type="checkbox" /> Namda Embroidery Rugs
+        </label>
+      </div>
+    </div>
+
+    <div className="category">
+      <span className="category-title">Furniture</span>
+      <div className="category-details">
+        <label>
+          <input type="checkbox" /> Walnut Wood
+        </label>
+        <label>
+          <input type="checkbox" /> Crewel Furniture
+        </label>
+        <label>
+          <input type="checkbox" /> Wicker Furniture
+        </label>
+      </div>
+    </div>
+
+
+    <div className="category">
+      <span className="category-title">window treatment</span>
+      <div className="category-details">
+        <label>
+          <input type="checkbox" /> Crewel Embroidery Curtains
+        </label>
+        <label>
+          <input type="checkbox" /> Pinjrakari - Kashmir Lattice Work
+        </label>
+        <label>
+          <input type="checkbox" /> Wicker Furniture
+        </label>
+      </div>
+    </div>
+
+
+    <div className="category">
+      <span className="category-title">Celling  Treatment</span>
+      <div className="category-details">
+        <label>
+          <input type="checkbox" /> Khatamband
+        </label>
+      </div>
+    </div>
+
+    <div className="other-input-wrapper">
+              <label className="other-label">
+                <input
+                  type="checkbox"
+                  checked={selectedPackagingStandards.includes("other")}
+                  onChange={() => handlePackagingStandardsChange("other")}
+                />
+                Other:
+              </label>
+              <input
+                type="text"
+                placeholder="Specify packaging standards"
+                className="other-input"
+                disabled={!selectedPackagingStandards.includes("other")}
+              />
+            </div>
+
   </div>
 </div>
 
