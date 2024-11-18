@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import Header from '../Homepage/Header';
 import Footer from '../Homepage/Footer';
-import Form1 from './Forms/Form1';
-import Form2 from './Forms/Form2';
-import Form3 from './Forms/Form3';
+
 
 const Ecommerce = () => {
     // State to track which form step is currently active
@@ -26,9 +24,9 @@ const Ecommerce = () => {
                 <h2 className="mb-4">Business Information Form</h2>
 
                 {/* Conditionally render forms based on the current step */}
-                {currentStep === 1 && <Form1 />}
+                {/* {currentStep === 1 && <Form1 />}
                 {currentStep === 2 && <Form2 />}
-                {currentStep === 3 && <Form3 />}
+                {currentStep === 3 && <Form3 />} */}
 
                 {/* Navigation buttons */}
                 <div className="d-flex justify-content-between mt-4">

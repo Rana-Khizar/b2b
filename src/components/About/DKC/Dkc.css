@@ -10,6 +10,7 @@
   width: 400px;
 }
 .section-sub-title {
+  text-align: left;
   font-size: 14px;
   font-weight: bold;
   color: #060606;
@@ -27,6 +28,7 @@
 
 .faq-thumb img {
   justify-content: center;
+
   width: 100%;
   max-width: 350px;
 

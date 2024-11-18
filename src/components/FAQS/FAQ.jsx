@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import faq1 from '../../assets/faq1.png'
 import './FAQ.css'

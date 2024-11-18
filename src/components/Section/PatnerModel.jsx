@@ -42,8 +42,6 @@ const PatnerModel = () => {
                                 <h5 className="section-sub-title">B2B Connect</h5>
                                 <h1 className="section-main-title">Choose the Partnership Model that Fits Your Business</h1>
                                 {/* <h1 className="section-main-title"> <span></span></h1> */}
-                                <p className="section-title-descr">Brief description of each partnership model with icons or visuals representing each:
-                                </p>
                             </div>
                             <div className="about-us-content">
                                 <div className="about-us-list">

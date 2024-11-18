@@ -12,7 +12,7 @@ import StudiesSection from './components/StudiesSection/StudiesSection'
 import Card from './card/Card'
 import Service from './service/Service'
 import Service1 from './service/Service1'
-import FAQ from './components/FAQS/FAQ'
+//import FAQ from './components/FAQS/FAQ'
 //import ReactTypingEffect from 'react-typing-effect';
 import Layout from './Layout/Layout'
 //import About from './components/Homepage/About/About'
@@ -21,6 +21,7 @@ import Section1 from './components/Section/Section1'
 import Tools from './components/Section/Tools'
 import Regpatner from './components/Section/RegPatner'
 import PatnerModel from './components/Section/PatnerModel'
+import Qna from './components/FAQS/Qna'
 
 
 function Home() {
@@ -43,7 +44,8 @@ function Home() {
                 <PatnerModel/>
                 <Tools />
                 <Testimoninal />
-                <FAQ />
+                <Qna/>
+                {/* <FAQ /> */}
                 <Section1/>
                 {/* <FeatureArea /> */}
             </Layout>
